@@ -1,0 +1,12 @@
+<h1><%= @registered_application.name %></h1>
+
+<div>
+ <p><%= @registered_application.url %></p>
+</div>
+
+
+<div class="col-md-4">
+  <%= link_to "Back to index", registered_applications_path, class: 'btn btn-primary' %>
+  <%= link_to "Edit", edit_registered_application_path(@registered_application), class: 'btn btn-success' %>
+  <%= link_to "Delete", @registered_application, method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to delete this post?'} %>
+</div>
