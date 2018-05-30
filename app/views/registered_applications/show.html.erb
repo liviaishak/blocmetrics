@@ -7,7 +7,10 @@
 
       <div class="row">
        <h4><%= @registered_application.url %></h4>
-       <p><%= @events %></p>
+       <% @events.each do |name, events| %>
+         <h3><%= name %>:</h3>
+          <p>Count: <%= events.size %></p>
+         <% end %>
       </div>
     </div>
 
