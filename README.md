@@ -4,7 +4,7 @@ Blocmetrics is a web app that allows users to easily track custom events across 
 ## How to Use:
 <p>Go into the webpage that you'd like to track</p>
 <p>Add this code in app/assets/javascripts/application.js</p>
-blocmetrics.report = function(eventName) {
+```blocmetrics.report = function(eventName) {
    var event = {event: { name: eventName }};
 
    var request = new XMLHttpRequest();
@@ -17,7 +17,7 @@ blocmetrics.report = function(eventName) {
 }
 <p>Add event listeners of your wish</p>
 <p>Run a callback on blocmetrics.report.</p>
-
+```
 ## Technologies used:
 <p>Rails 5</p>
 <p>Devise</p>
