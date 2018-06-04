@@ -19,7 +19,7 @@ blocmetrics.report = function(eventName) {
 }
 ```
 <p>Add event listeners of your wish</p>
-<p>Run a callback on blocmetrics.report.</p>
+<p>Run a callback on blocmetrics.report</p>
 
 
 ## Technologies used:
